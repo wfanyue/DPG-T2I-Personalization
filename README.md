@@ -49,5 +49,13 @@ Use the following command for inference
 
     CUDA_VISIBLE_DEVICES=0 python generate_images.py --ckpt_path /path/to/model --prompt "A sks backpack on the beach"
 
+## **Visualization Examples**
+<img width="852" alt="image" src="https://github.com/user-attachments/assets/a1ba1687-8864-4c19-872b-a1fef50c51f6">
+
+## **Todo**
+- [ ] Code of DINO reward of DreamBooth
+- [ ] Code of face reward of DreamBooth
+- [ ] Code of Look forward of CustomDiff
+- [ ] Code of DINO reward of CustomDiff
 <!-- ## **Citation**
     -->
