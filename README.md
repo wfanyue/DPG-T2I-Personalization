@@ -3,6 +3,7 @@
 
  <a href='https://arxiv.org/abs/2407.06642v2'><img src='https://img.shields.io/badge/arXiv-2407.06642-b31b1b.svg'></a> &nbsp;
 </div>
+
 ## 🔆 Introduction
 
 This repo contains the official code of our ECCV2024 paper: [Powerful and Flexible: Personalized Text-to-Image Generation via Reinforcement Learning]
