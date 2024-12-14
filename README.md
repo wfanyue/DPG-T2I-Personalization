@@ -44,6 +44,11 @@ Train the model using the following command.
     --lr_scheduler="constant" \
     --train_text_encoder
     
+### Using 'DINO' reward
+
+Download `ViT-S/16` ckpt from the official website `https://github.com/facebookresearch/dino`.
+
+
 ## **Inference**
 Use the following command for inference
 
@@ -53,7 +58,7 @@ Use the following command for inference
 <img width="852" alt="image" src="https://github.com/user-attachments/assets/a1ba1687-8864-4c19-872b-a1fef50c51f6">
 
 ## **Todo**
-- [ ] Code of DINO reward of DreamBooth
+- [ ] Code of DINO reward of DreamBooth | Doing
 - [ ] Code of face reward of DreamBooth
 - [ ] Code of Look forward of CustomDiff
 - [ ] Code of DINO reward of CustomDiff
