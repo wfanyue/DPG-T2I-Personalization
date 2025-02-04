@@ -48,6 +48,19 @@ Train the model using the following command.
 
 Download `ViT-S/16` ckpt from the official website `https://github.com/facebookresearch/dino`.
 
+export OUTPUT_DIR="toy"
+    CUDA_VISIBLE_DEVICES=0 accelerate launch --config_file default_config.yaml train_dreambooth_dpg_dino.py \
+    --pretrained_model_name_or_path path/to/pretrained_stable_diffusion \
+    --instance_data_dir path/to/personalized_collections \
+    --instance_prompt "a photo of sks backpack" \
+    --with_prior_preservation --prior_loss_weight=1.0 \
+    --class_data_dir="path_class_images_backpack" \
+    --output_dir=$OUTPUT_DIR \
+    --class_prompt="a photo of backpack" \
+    --resolution=512 --train_batch_size=1 --max_train_steps=1000 --learning_rate=1e-6  \
+    --num_class_images=8 --lr_warmup_steps=0 \
+    --lr_scheduler="constant" \
+    --train_text_encoder
 
 ## **Inference**
 Use the following command for inference
