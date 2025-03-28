@@ -8,8 +8,6 @@
 
 This repo contains the official code of our ECCV2024 paper: [Powerful and Flexible: Personalized Text-to-Image Generation via Reinforcement Learning]
 
-The ~~paper and~~ code will be release soon in the next 1~2 weeks.
-
 ## ⚙️ Setup
 
 Before running the script, make sure you install the library from source:
@@ -46,7 +44,7 @@ Train the model using the following command.
     
 ### Using 'DINO' reward
 
-Download `ViT-S/16` ckpt from the official website `https://github.com/facebookresearch/dino`.
+Download `ViT-S/16` ckpt from the official website `https://github.com/facebookresearch/dino`. *The rest parts are in progress to be reorganized will be released as soon as I can.*
 
 export OUTPUT_DIR="toy"
     CUDA_VISIBLE_DEVICES=0 accelerate launch --config_file default_config.yaml train_dreambooth_dpg_dino.py \
