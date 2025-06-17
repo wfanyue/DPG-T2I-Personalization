@@ -46,7 +46,7 @@ Train the model using the following command.
 
 Download `ViT-S/16` ckpt from the official website `https://github.com/facebookresearch/dino`. *The rest parts are in progress to be reorganized will be released as soon as I can.*
 
-export OUTPUT_DIR="toy"
+    export OUTPUT_DIR="toy"
     CUDA_VISIBLE_DEVICES=0 accelerate launch --config_file default_config.yaml train_dreambooth_dpg_dino.py \
     --pretrained_model_name_or_path path/to/pretrained_stable_diffusion \
     --instance_data_dir path/to/personalized_collections \
